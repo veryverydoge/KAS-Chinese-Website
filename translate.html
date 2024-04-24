@@ -1,0 +1,461 @@
+<HTML>
+<TITLE>高老師的中文天地</TITLE>
+
+<head>
+  <meta name="viewport" content="width=device -width, initial scale=1">
+  <STYLE type='text/css'>
+    a {
+      width: 20%
+    }
+
+    body {
+      background-color: #000000;
+    }
+
+    .arrow {
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      transform: scale(0.5);
+    }
+
+    #arrowr {
+      border-left: 100px solid red;
+      left: 85%;
+      top: 90%;
+    }
+
+    #arrowr:Hover {
+      border-left: 100px solid yellow;
+    }
+
+    #arrowl {
+      border-right: 100px solid red;
+      left: 56%;
+      top: 90%;
+    }
+
+    #arrowl:Hover {
+      border-right: 100px solid yellow;
+    }
+
+    #banarr {
+      border-left: 100px solid red;
+      left: 85%;
+      top: 40%;
+    }
+
+    #banarr:Hover {
+      border-left: 100px solid yellow;
+      left: 85%;
+      top: 40%;
+    }
+
+    #banarl {
+      border-right: 100px solid red;
+      left: 9%;
+      top: 40%;
+    }
+
+    #banarl:Hover {
+      border-right: 100px solid yellow;
+      left: 9%;
+      top: 40%;
+    }
+
+    .box {
+      position: absolute;
+      background-color: #F4AB22;
+    }
+
+    #box1 {
+      width: 21%;
+      height: 10%;
+      left: 65%;
+      top: 70%;
+    }
+
+    #box2 {
+      width: 25%;
+      height: 10%;
+      left: 10%;
+      top: 70%;
+    }
+
+    #box3 {
+      width: 45%;
+      height: 40%;
+      left: 10%;
+      top: 82%;
+    }
+
+    #box4 {
+      width: 99%;
+      height: 109px;
+      top: 0%;
+      z-index: -1;
+    }
+
+    .pading {
+      color: #FFFFFF;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 100px;
+      text-align: center;
+    }
+
+    .pading1 {
+      font-size: 50px;
+      position: absoulute;
+      top: 200px;
+    }
+
+    #pading2 {
+      font-size: 25px;
+      padding-top: 100px;
+    }
+
+    .p {
+      -webkit-transition: all 1500ms ease;
+      -moz-transition: all 1500ms ease;
+      -ms-transition: all 1500ms ease;
+      -o-transition: all 1500ms ease;
+      transition: all 1500ms ease;
+      position: absolute;
+      border: 5px solid white;
+    }
+
+    #p1 {
+      left: 70%;
+      top: 86%;
+      lenght: 100px;
+      width: 150px;
+      z-index: 1;
+    }
+
+    #p2 {
+      left: 70%;
+      top: 86%;
+      lenght: 100px;
+      width: 150px;
+    }
+
+    #p3 {
+      left: 70%;
+      top: 86%;
+      lenght: 100px;
+      width: 150px;
+    }
+
+    #p6 {
+      left: 70%;
+      top: 90%;
+      lenght: 100px;
+      width: 150px;
+      transform: scale(1.4);
+    }
+
+    #p4 {
+      left: 33%;
+      top: 1730px;
+      lenght: 100px;
+      width: 150px;
+      transform: scale(0.4);
+      z-index: 100;
+    }
+
+    #p5 {
+      left: 33%;
+      top: 1820px;
+      lenght: 100px;
+      width: 150px;
+      transform: scale(0.4);
+      z-index: 100;
+    }
+
+    #lunch {
+      position: absolute;
+      left: 25%;
+      top: 1150px;
+      align: center;
+      width: 700px;
+    }
+
+    #contact {
+      position: absolute;
+      width: 100%;
+      height: 75px;
+      margin: 25px 25px 25px 25px red;
+      left: 0%;
+      top: 100%;
+      text-align: center;
+    }
+
+    #con_title {
+      color: #FFFFFF;
+      left: 10%;
+      top: 80%;
+    }
+
+    #logo {
+      width: 100px;
+      position: relative;
+      z-index: 3333;
+    }
+
+    .banpic {
+      width: 950px;
+      position: absolute;
+      top: 23%;
+      left: 17%;
+    }
+  </STYLE>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      width: 225px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .footer {
+      position: absolute;
+      left: 0;
+      top: 1750px;
+      width: 100%;
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <SCRIPT>
+    var selected = 0;
+    function eee() {
+      if (selected == 0) {
+        document.getElementById('p1').style.opacity = 1;
+        document.getElementById('p2').style.opacity = 0;
+        document.getElementById('p3').style.opacity = 0;
+        document.getElementById('p6').style.opacity = 0;
+
+      }
+      else if (selected == 1) {
+        document.getElementById('p1').style.opacity = 0;
+        document.getElementById('p2').style.opacity = 1;
+        document.getElementById('p3').style.opacity = 0;
+        document.getElementById('p6').style.opacity = 0;
+      }
+      else if (selected == 2) {
+        document.getElementById('p1').style.opacity = 0;
+        document.getElementById('p2').style.opacity = 0;
+        document.getElementById('p3').style.opacity = 1;
+        document.getElementById('p6').style.opacity = 0;
+      }
+      else if (selected == 3) {
+        document.getElementById('p1').style.opacity = 0;
+        document.getElementById('p2').style.opacity = 0;
+        document.getElementById('p3').style.opacity = 0;
+        document.getElementById('p6').style.opacity = 1;
+      }
+    }
+
+    var yee = 0;
+    function yeet() {
+      if (yee == 0) {
+        document.getElementById('banpic1').style.zIndex = 1;
+        document.getElementById('banpic2').style.zIndex = 0;
+        document.getElementById('banpic3').style.zIndex = 0;
+        document.getElementById('banpic4').style.zIndex = 0;
+
+      }
+      else if (yee == 1) {
+        document.getElementById('banpic1').style.zIndex = 0;
+        document.getElementById('banpic2').style.zIndex = 1;
+        document.getElementById('banpic3').style.zIndex = 0;
+        document.getElementById('banpic4').style.zIndex = 0;
+      }
+      else if (yee == 2) {
+        document.getElementById('banpic1').style.zIndex = 0;
+        document.getElementById('banpic2').style.zIndex = 0;
+        document.getElementById('banpic3').style.zIndex = 1;
+        document.getElementById('banpic4').style.zIndex = 0;
+      }
+      else if (yee == 3) {
+        document.getElementById('banpic1').style.zIndex = 0;
+        document.getElementById('banpic2').style.zIndex = 0;
+        document.getElementById('banpic3').style.zIndex = 0;
+        document.getElementById('banpic4').style.zIndex = 1;
+      }
+    } 
+  </SCRIPT>
+  <div class="arrow" id='arrowr' onclick="
+        selected+=1;
+        if(selected>3){selected=0;}
+        eee();">
+  </DIV>
+  <div class="arrow" id='arrowl' onclick="
+        selected -=1;
+        if(selected<0){selected=3;}
+        eee();">
+  </div>
+
+  <div class="arrow" id='banarr' onclick="
+          yee+=1;
+          if(yee>3){yee=0;}
+          yeet();">
+  </div>
+  <div class="arrow" id='banarl' onclick="
+        yee -=1;
+        if(yee<0){yee=3;}
+        yeet();">
+  </div>
+  <a href="http://www.b111.net/novel/13/13750/index.html">
+    <IMG src='chinese website pictures/donki.jpeg' class="p" id='p1'></IMG>
+  </a>
+  <a href="https://www.99csw.com/book/1597/42872.htm">
+    <IMG src='chinese website pictures/alchemist.jpeg' class="p" id='p2'></IMG>
+  </a>
+  <a href="https://bailushuyuan.org/%E9%82%8A%E5%9F%8E">
+    <IMG src='chinese website pictures/the wall.jpeg' class="p" id='p3'></IMG>
+  </a>
+  <IMG src='chinese website pictures/a girl.png' class="p" id='p6'></IMG>
+  <a href="javascript:  void(window.open('https://www.youtube.com/@mskao1'));">
+    <IMG src='chinese website pictures/youtube.png' class="p" id='p4'></IMG>
+  </a>
+  <a href="javascript:  void(window.open('mailto:gkao@kas.tw?subject='));">
+    <IMG src='chinese website pictures/gmail.png' class="p" id='p5'></IMG>
+  </a>
+
+  <IMG src='chinese website pictures/confu.png' id='banpic1' class="banpic"></IMG>
+  <IMG src='chinese website pictures/donki.png' id='banpic2' class="banpic"></IMG>
+  <IMG src='chinese website pictures/kevineat.png' id='banpic3' class="banpic"> </IMG>
+  <IMG src='chinese website pictures/kevinib.png' id='banpic4' class="banpic"></IMG>
+
+  <DIV class="box" id='box1'>
+    <DIV class='pading pading1' style="positio: absolute; top: 400px;">文學特輯</DIV>
+  </DIV>
+  <DIV class="box" id='box2'>
+    <DIV class='pading pading1'>摘要</DIV>
+  </DIV>
+  <DIV class="box" id='box3'>
+    <DIV class="pading" id='pading2'>歡迎來到高老師的中文語言天地，探索中文的樂趣！
+      Welcome to Ms. Kao Chinese language world, explore and
+      enjoy Chinese! </DIV>
+  </DIV>
+  <DIV class="box" id='box4'>
+    <DIV class='pading'> KAS中文網 </DIV>
+  </DIV>
+
+  <div id="logo">
+    <a href="index.html">
+      <img src="chinese website pictures/kas-logo.png" width="100%"></a></img>
+  </div>
+
+  <div class="navbar">
+    <a href="grade_criteria.html">IB課程評分標準</a>
+    <a href="rhe_skill.html">修辭技巧</a>
+    <div class="dropdown">
+      <button class="dropbtn">超讚文學
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bookindex.html">"羊羊星星大冒險(尋找天命)"</a>
+        <a href="donkyindex.html">絕命精神病院(中世紀)</a>
+        <a href="https://bailushuyuan.org/%E9%82%8A%E5%9F%8E">邪惡居民(resident evil)</a>
+        <a href="http://www.b111.net/novel/48/48878/index.html">(英子的)最終幻想(發燒引起的)</a>
+      </div>
+    </div>
+
+
+    <div class="dropdown">
+      <button class="dropbtn">高雄美國學校相關
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://www.kas.tw/news/lunch-menu-spring-2021/">天下沒有白吃的午餐</a>
+        <a href="https://www.kas.tw/">高雄沒國學校主業</a>
+      </div>
+    </div>
+    <a href="index.html">變換至英文</a>
+  </div>
+  <div id="lunch""> <iframe src="
+    https://docs.google.com/presentation/d/e/2PACX-1vRcIgtqKvhrDOHIUaCCbw9z1u85yy7lwF_LoIfLZOggcgFN3KW6MragVBQ60W8iChGkV3I7XTz9QSoo/embed?start=true&amp;loop=false&awmp;delayms=60000"height="100%"
+    width="700px" frameBorder="1" style="min-height: 425px;">
+    </iframe>
+  </div>
+
+  <div class="footer">
+    <p style="
+        padding-left: 40px;
+        font-size: 50px;
+        ">Contact Information</p>
+  </div>
+
+</body>
+
+</HTML>
